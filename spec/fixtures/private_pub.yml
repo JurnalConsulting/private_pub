@@ -6,3 +6,7 @@ production:
   server: http://example.com/faye
   secret_token: PRODUCTION_SECRET_TOKEN
   signature_expiration: 600
+staging:
+  server: <%= ENV['FAYE_SERVER'] %>
+  secret_token: <%= ENV['FAYE_TOKEN'] %>
+  signature_expiration: <%= ENV['FAYE_EXPIRATION'] %>
